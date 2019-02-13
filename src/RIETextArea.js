@@ -6,6 +6,9 @@ import RIEStatefulBase from "./RIEStatefulBase";
 const debug = require("debug")("RIETextArea");
 
 class RIETextArea extends RIEStatefulBase {
+  constructor(props) {
+    super(props);
+  }
   keyDown = event => {
     if (event.keyCode === RIEBase.KEY_ESCAPE) {
       this.cancelEditing();
