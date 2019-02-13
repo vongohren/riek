@@ -23,6 +23,7 @@
   "homepage": "https://github.com/attently/riek#readme",
   "scripts": {
     "prepublish": "npm run build",
+    "prepack": "npm run build",
     "build-lib": "rm -rf lib/*; babel src --out-dir lib",
     "build-demo": "NODE_ENV=production ./node_modules/.bin/webpack --progress --color",
     "build": "npm run build-lib && npm run build-demo",
